@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title> Ivy Chan </title>
+<style>
+.item1 { grid-area: header; }
+.item2 { grid-area: menu; }
+.item3 { grid-area: main; }
+.item4 { grid-area: right; }
+.item5 { grid-area: menutwo; }
+.item6 { grid-area: maintwo; }
+.item7 { grid-area: righttwo; }
+.item8 { grid-area: menuthree; }
+.item9 { grid-area: mainthree; }
+.item10 { grid-area: rightthree; }
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header'
+    'menu main main main right'
+    'menu main main main right'
+    'menutwo maintwo maintwo maintwo righttwo'
+    'menutwo maintwo maintwo maintwo righttwo'
+    'menuthree mainthree mainthree mainthree rightthree'
+    'menuthree mainthree mainthree mainthree rightthree';
+  grid-gap: 10px;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+</style>
 </head>
 <body>
-	<h1> About me </h1>
-	<p> Hi! My name is Ivy Chan. I am currently a 10th grader at GEMS World Academy. This is my fourth year at GEMS. I have a little brother named Aaric, who is in seventh grade. My favorite school subject is math. In fact, I used to compete in math competitions.  I am also a competitive squash player and regularly competed in tournaments before COVID-19. I also used to be a competitive swimmer (I was in the top 8 fastest swimmers in Illinois for three events!).</p>
-	<img src="IMG_4310.png"> 
-	<p> I used to code JavaScript and Python a few years ago. I participated in YSP (Young Scholars Program), a summer math program that is hosted by the University of Chicago. YSP not only had math lectures, but also included afternoon programming sessions in the afternoon. </p>
+
+
+<div class="grid-container">
+  <div class="item1">Welcome to Ivy's Website</div>
+  <div class="item2"><img src="IMG_4310.png"></div>
+  <div class="item3">Hi! My name is Ivy Chan! I am a 15-year old and currently a 10th grader at GEMS World Academy. I have absolutely no idea what I'm going to do in the next 5 minutes since your reading this and am excited to discover my "life's path". My earliest precious memory is when my little brother was born and my latest precious memory is probably the last time I saw my friends in person (Covid-19 pandemic).</div>  
+  <div class="item4">Right</div>
+  <div class="item5">Menutwo</div>
+  <div class="item6">I've primarily played two sport in my life so far: swimming and squash. Not the vegetable squash, but the sport. Swimming was basically my life from when I was 9 up until 14. However, the sport took a huge toll on my body. I suffered an overused left shoulder and tendonitis in my right shoulder. I was slowly losing my passion for this sport and focused more on squash. Despite my primary injury during squash was a sprained ankle, I can currently firmly say that I love squash more than swimming. In fact, I am the school's squash team captain and plan on playing in college.</div>  
+  <div class="item7">Righttwo</div>
+  <div class="item8">Menuthree</div>
+  <div class="item9">I've also played piano for the majority of my life so far. I've practiced up to 6 hours a day and attended competitions. Although I do not compete or practice as much anymore, I occasionally still run my fingers along the keys and just enjoy the pleasure of playing rather than "grinding" to get better.</div>  
+  <div class="item10">Rightthree</div>
+
+</div>
+
 </body>
 </html>
